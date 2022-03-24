@@ -3,22 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildAComponent } from './parent/child-a/child-a.component';
-import { ChildBComponent } from './parent/child-b/child-b.component';
-import { ChildCComponent } from './parent/child-c/child-c.component';
+import { ParentModule } from './parent/parent.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParentComponent,
-    ChildAComponent,
-    ChildBComponent,
-    ChildCComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ParentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
